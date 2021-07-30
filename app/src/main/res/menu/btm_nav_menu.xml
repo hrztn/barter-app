@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/btm_marketplace"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="MARKETPLACE"/>
+
+
+
+    <item android:id="@+id/btm_userProfile"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="PROFILE"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BarterApp</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+    <string name="title_ongoing">ONGOING</string>
+    <string name="title_completed">COMPLETED</string>
+    <string name="title_manage_request">REQUESTING</string>
+
+    <string-array name="category">
+        <item>Wearable</item>
+        <item>Electrical</item>
+        <item>Sports</item>
+        <item>Consumable</item>
+        <item>Home Decoration</item>
+        <item>Kitchen</item>
+    </string-array>
+
+
+</resources>

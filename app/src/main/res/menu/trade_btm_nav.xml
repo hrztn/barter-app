@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_ongoing_trade"
+        android:icon="@drawable/ic_baseline_swap_horiz_24"
+        android:title="@string/title_ongoing" />
+
+    <item
+        android:id="@+id/navigation_completed_trade"
+        android:icon="@drawable/ic_baseline_celebration_24"
+        android:title="@string/title_completed" />
+
+    <item
+        android:id="@+id/navigation_manage_requests"
+        android:icon="@drawable/ic_baseline_real_estate_agent_24"
+        android:title="@string/title_manage_request"
+        />
+
+</menu>

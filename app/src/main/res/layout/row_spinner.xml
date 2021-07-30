@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trader_view_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:background="@color/primary"
+    android:fontFamily="@font/cabin_medium"
+    android:gravity="center"
+    android:minWidth="250dp"
+    android:paddingLeft="10dp"
+    android:text="User 1"
+    android:textColor="@color/white"
+    android:textIsSelectable="false"
+    android:textSize="15sp"
+    android:textStyle="bold" />

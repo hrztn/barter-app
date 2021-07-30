@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ss_logoImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/onlylogo_transparent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/ss_titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="WELCOME TO BARTER"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ss_logoImage"/>
+
+    <TextView
+        android:id="@+id/ss_bodyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_medium"
+        android:text="FAIR EXCHANGE IS NO ROBBERY."
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ss_titleText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

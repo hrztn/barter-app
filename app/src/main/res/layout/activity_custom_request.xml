@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CustomRequestActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/tertiary"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tertiary"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/Customspinner2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
+
+            <LinearLayout
+                android:id="@+id/CustomRequestedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/userdashboard"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/CustomrequestItemImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="83dp"
+                    app:srcCompat="@drawable/border_imageview" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/CustomrequestItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ITEM NAME"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cabin_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Customrequested_value_textViewD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Condition: Good"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/Customrequested_quantity_textView_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="SELECT ITEM TO TRADE:"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/Customspinner"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
+
+            <LinearLayout
+                android:id="@+id/CustomofferedItemView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/userdashboard"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/CustomofferedItemImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="83dp"
+                    app:srcCompat="@drawable/border_imageview" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Customoffereditem_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ITEM NAME"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cabin_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Customoffered_value_textViewD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Condition: Good"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/Customoffered_quantity_textView_D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/CustomrequestMessage"
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:hint="PLEASE ENTER YOUR MESSAGE"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/Customrequest_send_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/primary"
+                android:padding="6dp"
+                android:fontFamily="@font/cabin_medium"
+                android:text="SEND OFFER"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

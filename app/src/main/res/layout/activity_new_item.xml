@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".NewItemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/userdashboard"
+            android:backgroundTint="@color/secondary"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="ADD NEW ITEM"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/thumbnailImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10sp"
+                android:background="@drawable/border_imageview"
+                android:padding="20dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/add_image" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD ITEM IMAGE HERE"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/cabin_medium"/>
+
+            <EditText
+                android:id="@+id/nameitemET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/text_box"
+                android:elevation="2dp"
+                android:hint="Please enter item name."
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/itemDescriptionET"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/text_box"
+                android:elevation="2dp"
+                android:hint="Please enter item description."
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ITEM CATEGORIES"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/cabin_medium"/>
+
+                <RadioGroup
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonWearable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="Wearable"
+                            android:textColor="@color/white"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonElectrical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="Electrical"
+                            android:textColor="@color/white"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonKitchen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="Kitchen"
+                            android:textColor="@color/white"/>
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/radio_group2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonSports"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="Sports"
+                            android:textColor="@color/white"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonHome_Deco"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="Home Deco"
+                            android:textColor="@color/white"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButtonConsumable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="Consumable"
+                            android:textColor="@color/white"/>
+                    </RadioGroup>
+
+                </RadioGroup>
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/categoryTagsET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/text_box"
+                android:elevation="2dp"
+                android:hint="category"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/preferTrade_Items_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/text_box"
+                android:elevation="2dp"
+                android:hint="Looking for what item to trade?"
+                android:textColorHint="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="viewStart"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/item_condET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/text_box"
+                android:elevation="2dp"
+                android:hint="Please tell the item condition."
+                android:textColorHint="@color/white"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="viewStart"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/item_quantityET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/text_box"
+                android:elevation="2dp"
+                android:hint="What is the quantity?"
+                android:textColorHint="@color/white"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textAlignment="viewStart"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/addItem_addBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER TO ADD ITEM"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cabin_medium"
+                android:backgroundTint="@color/primary"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".SearchItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SEARCH ITEMS"
+            android:fontFamily="@font/bungee"
+            android:textColor="@color/primary"
+            android:textSize="23sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/search_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/cabin_medium"
+            android:textStyle="bold"
+            android:background="@color/primary"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="20dp">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/catagory_filter2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemsRecyclerViewmain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp" />
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

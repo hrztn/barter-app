@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatrecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/mssageeTChatmessage"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="TYPE HERE"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:inputType="textPersonName" />
+
+            <ImageButton
+                android:id="@+id/send_Chatmessagebutton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/secondary"
+                app:srcCompat="@drawable/ic_baseline_send_24" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createCustomRequest"
+            android:padding="5dp"
+            android:text="CREATE OFFER"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/bungee"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
