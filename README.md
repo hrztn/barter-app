@@ -1,20 +1,20 @@
 # barter-app
 FYP: MOBILE APP FOR BARTER SYSTEM 
 
-What is Barter System?
+WHAT IS BARTER SYSTEM? 
 The earliest mode of transaction which involves the process of exchanging one good for another.
 
-Project Aims:
+PROJECT AIM:
 To develop a mobile application that will serve as a platform for members of the community who have an interest in barter system.
 
-Platform:
+PLATFORM:
 Android
 
-Build with: 
+BUILD WITH: 
 - Android Studio
 - Google's Firebase (back-end)
 
-App Main Features:
+APP MAIN FEATURES:
 - Marketplace
 - Barter Activities (Request, Ongoing, Past)
 - Chat
