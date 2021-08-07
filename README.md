@@ -16,7 +16,7 @@ Build with:
 
 App Main Features:
 - Marketplace
-- Barter Activities ( Request, Ongoing, Past)
+- Barter Activities (Request, Ongoing, Past)
 - Chat
 - User Profile
 
